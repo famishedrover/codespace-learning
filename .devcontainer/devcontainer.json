@@ -1,7 +1,7 @@
 {
     "name": "Mudits first",
 
-    "dockerFile": "dockerfiles/Dockerfile",
+    "dockerFile": "./dockerfiles/Dockerfile",
     
     "postCreateCommand": "git clone https://github.com/repoA.git && git clone https://github.com/repoB.git && git clone https://github.com/repoC.git && git clone https://github.com/repoD.git",
 
