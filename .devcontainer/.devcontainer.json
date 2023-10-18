@@ -1,0 +1,26 @@
+{
+    "name": "Mudits first",
+
+    "dockerFile": "dockerfiles/Dockerfile",
+    
+    "postCreateCommand": "git clone https://github.com/repoA.git && git clone https://github.com/repoB.git && git clone https://github.com/repoC.git && git clone https://github.com/repoD.git",
+
+    "remoteUser": "vscode",
+
+	// Configure tool-specific properties.
+	"customizations": {
+		"codespaces": {
+			"repositories": {
+			  "konscodes/*": {
+				"permissions": "write-all"
+			  }
+			}
+		},
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash"
+            },
+            "extensions": ["ms-vscode-remote.remote-containers"],
+        }
+	}
+}
